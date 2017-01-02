@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import logo from './img/ingenico-logo.png';
-import './App.css';
+import ListaCartao from './cartoes/lista';
+import FormularioCartao from './associacao/formulario';
+import './_css/pure-min.css';
+import './_css/grids-responsive-min.css';
+import './_css/blog.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div id="layout" className="pure-g">
+          <ListaCartao />
+          <FormularioCartao />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
     );
   }
 }
