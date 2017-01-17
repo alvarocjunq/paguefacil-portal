@@ -1,5 +1,17 @@
 .footer{
     bottom: 0;
-    position: absolute;
+    position: fixed;
     padding: 0 !important;
+    z-index: 500;
+    /*background-color: rgb(228, 135, 59) !important;*/
+    width: 100%;
+    left: 25%;
+}
+
+#associar{
+    right: -5%;
+}
+
+ul{
+    float: left
 }

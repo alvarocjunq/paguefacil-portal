@@ -6,11 +6,22 @@ import './_css/grids-responsive-min.css';
 import './_css/blog.css';
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {cartao:{}};
+  }
+
+  associar(cartao){
+    this.setState({"cartao": cartao});
+    console.log("app",this.state, cartao)
+  }
+
   render() {
     return (
         <div id="layout" className="pure-g">
-          <ListaCartao />
-          <FormularioCartao />
+          <ListaCartao data={this.state.cartao} />
+          <FormularioCartao associar={this.associar.bind(this)} />
         </div>
     );
   }
