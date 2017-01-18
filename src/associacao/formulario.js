@@ -42,31 +42,31 @@ class FormularioCartao extends Component{
             <form className="col s12">
             <div className="row">
                 <div className="input-field col s10">
-                    <input id="numero" ref="numero" type="number" className="validate" value={this.state.numero} />
+                    <input id="numero" ref="numero" type="number" className="validate" />
                     <label htmlFor="numero">Número Cart&atilde;o</label>
                 </div>
                 <div className="input-field col s2">
-                    <input id="codseguranca" ref="codseguranca" type="number" className="validate" value={this.state.codseguranca} />
+                    <input id="codseguranca" ref="codseguranca" type="number" className="validate" />
                     <label htmlFor="codseguranca">Cód. Seguran&ccedil;a</label>
                 </div>
             </div>
             <div className="row">
                 <div className="input-field col s6">
-                    <input id="nome" ref="nome" type="text" className="validate" value={this.state.nome}/>
+                    <input id="nome" ref="nome" type="text" className="validate" />
                     <label htmlFor="nome">Nome do Cart&atilde;o</label>
                 </div>
                 <div className="input-field col s6">
-                    <input id="banco" ref="banco" type="text" className="validate" value={this.state.banco}/>
+                    <input id="banco" ref="banco" type="text" className="validate" />
                     <label htmlFor="banco">Banco</label>
                 </div>
             </div>
             <div className="row">
                 <div className="input-field col s6">
-                    <input id="senha" ref="senha" type="password" className="validate" value={this.state.senha}/>
+                    <input id="senha" ref="senha" type="password" className="validate" />
                     <label htmlFor="senha">Senha</label>
                 </div>
                 <div className="input-field col s6">
-                    <select className="browser-default" id="bandeira" value={this.state.bandeira} onChange={this.onChangeBandeira.bind(this)}>
+                    <select className="browser-default" id="bandeira"  onChange={this.onChangeBandeira.bind(this)}>
                         <option value="" disabled>Selecione a bandeira...</option>
                         <option value="visa">Visa</option>
                         <option value="mastercard">Mastercard</option>

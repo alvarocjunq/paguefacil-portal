@@ -14,7 +14,6 @@ class App extends Component {
 
   associar(cartao){
     this.setState({"cartao": cartao});
-    console.log("app",this.state, cartao)
   }
 
   render() {
