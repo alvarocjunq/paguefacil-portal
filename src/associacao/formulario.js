@@ -7,7 +7,7 @@ class FormularioCartao extends Component{
 
     constructor(){
         super();
-        this.state = {bandeira: ''};
+        this.state = {bandeira: 'visa'};
     }
 
     onAssociar(){
